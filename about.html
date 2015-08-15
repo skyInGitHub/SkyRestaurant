@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<link rel="stylesheet" href="themes/313_Ass1_theme.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="css/about.css" />
+		<!--http://jqmdesigner.appspot.com/designer.html#&id=1439553481841-->
+		<link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
+		<script type="text/javascript" src="js/about.js" ></script>
+
+	</head>
+
+	<body>
+		<!--The about page-->
+		<div data-role="page" id="about" data-theme="d">
+			<!--header: Back home icon-->
+			<div data-role="header">
+				<a href="home.html"
+					class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a>
+				<h5>About</h5>
+			</div>
+			<!--Gallery: pictures about restaurant
+				reference: http://workshop.rs/2010/07/create-image-gallery-in-4-lines-of-jquery/
+			-->
+			<div data-role="main" class="ui-content">
+				<div id="gallery">
+					<div id="panel">
+						<img id="largeImage" src="img/image_01_large.jpg" />
+						<div id="description">First image description</div>
+					</div>
+
+					<div id="thumbs">
+						<img src="img/image_01_thumb.jpg" alt="1st image description" />
+						<img src="img/image_02_thumb.jpg" alt="2nd image description" />
+						<img src="img/image_03_thumb.jpg" alt="3rd image description" />
+						<img src="img/image_04_thumb.jpg" alt="4th image description" />
+						<img src="img/image_05_thumb.jpg" alt="5th image description" />
+					</div>
+				</div>
+			</div>
+	</body>
+
+</html>
