@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<link rel="stylesheet" href="themes/313_Ass1_theme.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="css/home.css" />
+		<!--http://jqmdesigner.appspot.com/designer.html#&id=1439553481841-->
+		<link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+				if (!navigator.userAgent.match(/(iPhone|Android)/)){
+					$('a.phonelink').click(function(e){
+						alert("Phone link is prevented from working since this is not smartphone")
+						e.preventDefault();
+					})
+				}
+			})
+		</script>
+
+	</head>
+
+	<body>
+		<!--The index page. Give navigation to other pages.-->
+		<div data-role="page" id="index" data-theme="d">
+			<div data-role="main" class="ui-content">
+				<!--For page titling: instand of header-->
+				<div class="ui-grid-solo" style="height:150px; width:320px; margin:-18px">
+					<div class="ui-block-a" style="height:100%">
+						<img src="img/AppBackground_1.gif" style="margin-top:-20px; margin-left:-5px; width:100%; height:180px;">
+						<h3 style="position:absolute; z-index:10; top:50px; left:100px; font-family:sans-serif;color: brown;">
+				        	Restaurant
+				        </h3>
+					</div>
+				</div>
+				<!--use icons to link six pages-->
+				<!--First Line: Menu, Recipe, Feedback-->
+				<div class="ui-grid-b">
+					<!--Menu-->
+					<div class="ui-block-a">
+						<a href="menu.html" data-transition="slide" id="a1">
+							<img src="img/index_menu.jpg" style="width:80px; margin-bottom:-20px;">
+							<h4 style="text-align: center;">Menu</h4>
+						</a>
+					</div>
+					<!--Recipe-->
+					<div class="ui-block-b">
+						<a href="recipe.html" data-transition="slide" id="a1">
+							<img src="img/index_recipe.jpg" style="width:80px; margin-bottom:-20px;">
+							<h4 style="text-align: center;">Recipe</h4>
+						</a>
+					</div>
+					<!--Feedback-->
+					<div class="ui-block-c">
+						<a href="feeback.html" data-transition="slide" id="a1">
+							<img src="img/index_feedback.jpg" style="width:80px; margin-bottom:-20px;">
+							<h4 style="text-align: center;">Feedback</h4>
+						</a>
+					</div>
+				</div>
+				<!--Second Line: Location, About, Contact-->
+				<div class="ui-grid-b">
+					<!--Location-->
+					<div class="ui-block-a">
+						<a href="location.html" data-transition="slide" id="a1">
+							<img src="img/index_location2.jpg" style="width:80px; margin-bottom:-20px;">
+							<h4 style="text-align: center;">Location</h4>
+						</a>
+					</div>
+					<!--About, to be the picture gallery-->
+					<div class="ui-block-b">
+						<a href="about.html" data-transition="slide" id="a1">
+							<img src="img/index_about.png" style="width:80px; margin-bottom:-20px;">
+							<h4 style="text-align: center;">About</h4>
+						</a>
+					</div>
+					<!--Contact-->
+					<div class="ui-block-c">
+						<a href="contact.html" data-transition="slide" id="a1">
+							<img src="img/index_contact.jpg" style="width:80px; margin-bottom:-20px;">
+							<h4 style="text-align: center;">Contact</h4>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
