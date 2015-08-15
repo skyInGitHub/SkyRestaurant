@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<link rel="stylesheet" href="themes/313_Ass1_theme.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<!--http://jqmdesigner.appspot.com/designer.html#&id=1439553481841-->
+		<link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+		<!--The location page-->
+		<div data-role="page" id="location" data-theme="d">
+			<!--header: Back home icon-->
+			<div data-role="header">
+				<a href="home.html"
+					class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a>
+				<h5>Location</h5>
+			</div>
+			<!--show the map with Google api.-->
+			<div data-role="main" class="ui-content">
+				<div is="gmap" style="width:100%;height:400px;" zoom="18" 
+					address="Deakin University, Burwood, Melbourne" id="map">
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
