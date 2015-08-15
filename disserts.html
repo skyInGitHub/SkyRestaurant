@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<link rel="stylesheet" href="themes/313_Ass1_theme.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="css/appetizer.css" />
+		<!--http://jqmdesigner.appspot.com/designer.html#&id=1439553481841-->
+		<link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+		<!--The dissert1 page-->
+		<div data-role="page" id="dissert1" data-theme="d">
+			<!--header: Back menu icon: go back to the menu.html
+				bar list icon: show more dishes in this category in the right(right-menu)
+				shopping icon: jump to recipe.html to see ordered dishes
+			-->
+			<div data-role="header">
+				<a href="menu.html" class="ui-btn ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext ui-corner-all">Back Menu</a>
+				<h5>Disserts</h5>
+				<a href="#right-menu" class="ui-btn ui-btn-right ui-icon-bars ui-btn-icon-notext ui-corner-all" style="margin-right: 30px;">Bar</a>
+				<a href="recipe.html" class="ui-btn ui-btn-right ui-icon-carat-l ui-btn-icon-notext ui-corner-all" s tyle="margin-right: 30px;">Recipe</a>
+			</div>
+			<!-- right-menu -->
+			<div id="right-menu" data-role="panel" data-position="left" data-theme="b" data-position-fixed="false" data-display="overlay">
+				<span>Disserts</span>
+				<a href="#dissert1"
+					class="ui-btn ui-btn-active" data-theme="b" data-rel="close">Dissert1</a>
+				<a href="#dissert2"
+					class="ui-btn" data-theme="b" data-rel="close">Dissert2</a>
+			</div>
+			<!--main-->
+			<div data-role="main" class="ui-content">
+				<img id="menuImag" src="img/appetizer1.jpg" />
+				<table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+					<thead>
+						<tr>
+							<th>Dissert1</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Small</td>
+							<td>$5.00</td>
+						</tr>
+						<tr>
+							<td>Medium</td>
+							<td>$10.00</td>
+						</tr>
+						<tr>
+							<td>Medium</td>
+							<td>$15.00</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--footer-->
+			<div data-role="footer">
+				<!--Two columns: 
+					One form with two colums: choose size and quatity
+					One submit button: add the pervious form into the recipe.html
+				-->
+				<div data-role="navbar" style="margin:0 0 -5px;">
+					<form id="formDis1" method="post">
+					<label for="select-size">Size</label>
+					<select name="select-size" id="select-size" data-native-menu="false">
+						<option value="s">small</option>
+						<option value="m">Medium</option>
+						<option value="b">Big</option>
+					</select>
+					<label for="select-qty">Qty</label>
+					<select name="select-qty" id="select-qty" data-native-menu="false">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+					<input type="submit" value="Add" />
+				</div>
+			</div>
+		</div>
+		<!--End of dissert1 page-->
+					
+		<!--The dissert2 page-->
+		<div data-role="page" id="dissert2" data-theme="d">
+			<!--header: Back menu icon: go back to the menu.html
+				bar list icon: show more dishes in this category in the right(right-menu)
+				shopping icon: jump to recipe.html to see ordered dishes
+			-->
+			<div data-role="header">
+				<a href="menu.html" class="ui-btn ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext ui-corner-all">Back Menu</a>
+				<h5>Disserts</h5>
+				<a href="#right-menu" class="ui-btn ui-btn-right ui-icon-bars ui-btn-icon-notext ui-corner-all" style="margin-right: 30px;">Bar</a>
+				<a href="recipe.html" class="ui-btn ui-btn-right ui-icon-carat-l ui-btn-icon-notext ui-corner-all" s tyle="margin-right: 30px;">Recipe</a>
+			</div>
+			<!-- right-menu -->
+			<div id="right-menu" data-role="panel" data-position="left" data-theme="b" data-position-fixed="false" data-display="overlay">
+				<span>Disserts</span>
+				<a href="#dissert1"
+					class="ui-btn ui-btn-active" data-theme="b" data-rel="close">Dissert1</a>
+				<a href="#dissert2"
+					class="ui-btn" data-theme="b" data-rel="close">Dissert2</a>
+			</div>
+			<!--main-->
+			<div data-role="main" class="ui-content">
+				<img id="menuImag" src="img/appetizer1.jpg" />
+				<table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+					<thead>
+						<tr>
+							<th>Dissert2</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Small</td>
+							<td>$5.00</td>
+						</tr>
+						<tr>
+							<td>Medium</td>
+							<td>$10.00</td>
+						</tr>
+						<tr>
+							<td>Medium</td>
+							<td>$15.00</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--footer-->
+			<div data-role="footer">
+				<!--Two columns: 
+					One form with two colums: choose size and quatity
+					One submit button: add the pervious form into the recipe.html
+				-->
+				<form id="formDis2" method="post">
+					<label for="select-size">Size</label>
+					<select name="select-size" id="select-size" data-native-menu="false">
+						<option value="s">small</option>
+						<option value="m">Medium</option>
+						<option value="b">Big</option>
+					</select>
+					<label for="select-qty">Qty</label>
+					<select name="select-qty" id="select-qty" data-native-menu="false">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+					<input type="submit" value="Add" />
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>
