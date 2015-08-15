@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Restaurant_Feedback</title>
+		
+		<link rel="stylesheet" href="themes/313_Ass1_theme.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<!--http://jqmdesigner.appspot.com/designer.html#&id=1439553481841-->
+		<link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		
+	</head>
+	<body>
+		<!--The feedback page-->
+		<div id="feedback" data-role="page" data-theme="d">
+			<!--header: Back home icon-->
+			<div data-role="header" data-theme="d">
+				<a href="home.html" 
+					class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a>
+				<h5>Feedback</h5>
+			</div>
+			<!--Submit a feedback form. 
+				use action="....php"(database) yet no.
+			-->
+			<div data-role="main" class="ui-content">
+				<form id="feedbackForm" method="get">
+					<label>Customer Name:</label>
+					<input type="text" name="cusname" /> </br>
+					<label>Contact Information:</label>
+					<input type="text" name="coninfo" /> </br>
+					<label>Feedback:</label>
+					<input type="text" name="febaname" /> </br>
+					<input type="submit" value="submit" />
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
