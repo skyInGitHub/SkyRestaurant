@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<link rel="stylesheet" href="themes/313_Ass1_theme.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="css/menu.css" />
+		<!--http://jqmdesigner.appspot.com/designer.html#&id=1439553481841-->
+		<link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+		<!--The menu page-->
+		<div data-role="page" id="menu" data-theme="d">
+			<!--header: Back home icon-->
+			<div data-role="header">
+				<a href="home.html"
+					class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a>
+				<h5>Menu</h5>
+			</div>
+			<!--menu inlcudes: Appetizer, Disserts, Drinks
+				use pictures to link those dishes.
+			-->
+			<div data-role="main" class="ui-content">
+				<!--Appetizer with image.
+					click to link appetizer.html
+				-->
+				<div>
+					<a href="appetizer.html" id="thumbs">
+						<img id="largeImage" src="img/AppBackground_1.gif" />
+						<div id="description">Appetizer</div>
+					</a>
+				</div>
+				<!--Disserts with image.
+					click to link disserts.html
+				-->
+				<div>
+					<a href="disserts.html" id="thumbs">
+						<img id="largeImage" src="img/AppBackground_1.gif" />
+						<div id="description">Disserts</div>
+					</a>
+				</div>
+				<!--Drinks with image.
+					click to link drinks.html
+				-->
+				<div>
+					<a href="drinks.html" id="thumbs">
+						<img id="largeImage" src="img/AppBackground_1.gif" />
+						<div id="description">Drinks</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
