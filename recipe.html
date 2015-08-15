@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<!--http://jqmdesigner.appspot.com/designer.html#&id=1439553481841-->
+		<link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		
+		<link rel="stylesheet" href="themes/313_Ass1_theme.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
+	</head>
+
+	<body>
+		<!--The recipe page-->
+		<div data-role="page" id="recipe" data-theme="d">
+			<!--header: Back home icon, Go to menu icon-->
+			<div data-role="header">
+				<a href="home.html" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a>
+				<h5>Recipe</h5>
+				<a href="menu.html" class="ui-btn ui-btn-icon-right ui-icon-grid ui-btn-icon-notext ui-corner-all">Menu</a>
+			</div>
+			<!--show the check box to select items-->
+			<div data-role="main" class="ui-content">
+				<form id="myform" action="formprocessor.php" method="post">
+					<!-- seems no difference with form tag, maybe related to the form which need to submit -->
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<!-- checkbox -->
+							<legend>Appetizer:</legend>
+							<input type="checkbox" name="checkbox-Appetizer1" id="checkbox-Appetizer1">
+							<label for="checkbox-Appetizer1">Appetizer1</label>
+							<input type="checkbox" name="checkbox-Appetizer2" id="checkbox-Appetizer2">
+							<label for="checkbox-Appetizer2">Appetizer2</label>
+						</fieldset>
+						<fieldset data-role="controlgroup">
+							<!-- checkbox -->
+							<legend>Disserts:</legend>
+							<input type="checkbox" name="checkbox-Dissert1" id="checkbox-Dissert1">
+							<label for="checkbox-Dissert1">Dissert1</label>
+							<input type="checkbox" name="checkbox-Dissert2" id="checkbox-Dissert2">
+							<label for="checkbox-Dissert2">Dissert2</label>
+						</fieldset>
+						<fieldset data-role="controlgroup">
+							<!-- checkbox -->
+							<legend>Drinks:</legend>
+							<input type="checkbox" name="checkbox-Drink1" id="checkbox-Drink1">
+							<label for="checkbox-Drink1">Drink1</label>
+							<input type="checkbox" name="checkbox-Drink2" id="checkbox-Drink2">
+							<label for="checkbox-Drink2">Drink2</label>
+						</fieldset>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>
